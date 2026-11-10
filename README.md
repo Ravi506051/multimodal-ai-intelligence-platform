@@ -84,3 +84,10 @@ pytest -q
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Evaluation and Security Considerations
+
+- Test each ingestion path independently, including text extraction quality, OCR accuracy, audio transcription, and video frame sampling.
+- Preserve file names and source references so answers can be traced back to the original material.
+- Validate file types and sizes, handle parsing failures, and treat uploaded content as untrusted input.
+- Compare retrieval relevance and answer faithfulness separately; clearly report when evidence is missing.
